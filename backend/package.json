@@ -1,0 +1,33 @@
+{
+  "name": "depression-detection-backend",
+  "version": "1.0.0",
+  "description": "Production-ready Node/Express backend for Automated Depression Detection System",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "echo \"Backend has no build step\"",
+    "postinstall": "cd ../frontend && npm install && npm run build || echo \"Frontend build skipped\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "form-data": "^4.0.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
+
